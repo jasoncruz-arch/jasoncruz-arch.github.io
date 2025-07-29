@@ -27,6 +27,15 @@
 <meta name="twitter:image" content="{{ page.thumbnail | default: site.default_image }}">
 
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EQXEJVSN5E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EQXEJVSN5E');
+</script>
+
 
 
 {% if page.layout == "project" and page.title and page.description %}
