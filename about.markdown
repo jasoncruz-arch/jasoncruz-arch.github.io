@@ -37,6 +37,9 @@ permalink: /about/
   Experiment in Architecture Program <br> <br> <br>
 
   <h4> Experience </h4>
+
+  <span style="font-weight:600;"> Emirates Council for Balanced Development, UAE Federal Government (2025–Present) </span> <br> 
+  Architectural and Engineering Designer | Abu Dhabi, UAE <br> <br>
  
   <span style="font-weight:600;"> Urbz (2024) </span> <br> 
   Architecture and Engineering Intern | Mumbai, India <br> <br>
@@ -83,6 +86,9 @@ permalink: /about/
   
   <div class="content-col" style="flex: 1 1 0;">
   <h4> Exhibitions </h4>
+   <span style="font-weight:600;">2025 House of Artisans Design Exhibition</span> <br> 
+    Abu Dhabi, UAE <br> <br>
+
    <span style="font-weight:600;">2025 B+Abble: Micro Locale</span> <br> 
     Manila, Philippines <br> <br>
   
