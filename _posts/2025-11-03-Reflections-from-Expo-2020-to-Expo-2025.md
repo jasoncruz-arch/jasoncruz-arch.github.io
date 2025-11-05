@@ -3,7 +3,7 @@ layout: post
 title:  "Reflections from Expo 2020 to Expo 2025"
 description: My thoughts on visiting the Expos in Dubai and Osaka
 thumbnail: /assets/images/writings/reflections-from-expo/Expo_2020-25.jpg
-thumbnaildesc: "L: Al Wasl Plaza, entrance to Expo 2020. R: The Grand Ring, emtramce to Expo 2025."
+thumbnaildesc: "L: Al Wasl Plaza, entrance to Expo 2020. R: The Grand Ring, entrance to Expo 2025."
 date:   2025-11-04
 tags: [Photo Essay]
 ---
