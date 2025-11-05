@@ -172,7 +172,7 @@ There has been some confusion about the future of the site. After soliciting pro
 </div>
 
 Below are a few thoughts from the days that I visited Expo 2025 in Osaka that couldn't make it to the final essay.
-- Sou Fujimoto's Grand Ring was easily the highlight of this year's expo. It is omnipresent, yet not overbearing. It provides shelter, views, pathways, and intigue.
+- Sou Fujimoto's Grand Ring was easily the highlight of this year's expo. It is omnipresent, yet not overbearing. It provides shelter, views, pathways, and intrigue.
 - The Philippines pavilion was a pleasant surprise. It was better than I expected, especially after the Expo 2020 pavilion in Dubai. It was well curated and many people were interacting with the exhibitions inside.
 - The UAE's pavilion was a bit underwhelming (then again I'm comparing it to its host country counterpart). It felt more like "just a building", but as you entered, you could smell like you were back in the perfume souq.
 - This year was the Expo of AI– it was heavily featured as a technology and a lot of exhibits included its use for generating photos and videos. I imagine it is the older Japanese generation's first exposure to it.
