@@ -9,9 +9,39 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jul 2025 10:18:34 +0400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Nov 2025 09:36:29 +0400</lastBuildDate>
 
     
+    
+    <item>
+      <title>Reflections from Expo 2020 to Expo 2025</title>
+      <link>http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/</link>
+      <guid isPermaLink="true">http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/</guid>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0400</pubDate>
+      <author>Gerald Jason Cruz</author>
+
+      <content:encoded><![CDATA[
+        
+          <p>
+            <img src="http://localhost:4000/assets/images/writings/reflections-from-expo/Expo_2020-25.jpg" alt="Thumbnail for Reflections from Expo 2020 to Expo 2025" />
+          </p>
+          
+            <p><em>L: Al Wasl Plaza, entrance to Expo 2020. R: The Grand Ring, emtramce to Expo 2025.</em></p>
+          
+        
+
+        
+
+        
+        
+
+        
+          <p>Every five years a Universal Exposition, otherwise known as a World Expo, takes place. While it is an opportunity to showcase the latest in technology and intercultural exchange, it is also a playground for architects to design pavilions and structures at a global stage. I had the chance to visit both Expo 2020 in Dubai, UAE, and Expo 2025 in Osaka, Japan, which recently concluded last month. While there’s certainly a lot to talk about for both, what I find particularly interesting is the differences between the two. How far have we come in the past five years? What can we expect from institutions, and how are their values reflected in the infrastructure surrounding this spectacle? These comparisons, I argue, reveal the world’s current zeitgeist in terms of both technology and architectural design.</p>
+
+        <p><em><a href="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/">Continue reading <span class="arrow">&rarr;</span></a></em></p>
+
+      ]]></content:encoded>
+    </item>
     
     <item>
       <title>The Engineering Behind teamLab Phenomena Abu Dhabi</title>

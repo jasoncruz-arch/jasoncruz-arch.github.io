@@ -38,7 +38,7 @@ permalink: /about/
 
   <h4> Experience </h4>
 
-  <span style="font-weight:600;"> Emirates Council for Balanced Development, UAE Federal Government (2025–Present) </span> <br> 
+  <span style="font-weight:600;"> Emirates Council for Balanced Development, UAE Federal Government (2025-Present) </span> <br> 
   Architectural and Engineering Designer | Abu Dhabi, UAE <br> <br>
  
   <span style="font-weight:600;"> Urbz (2024) </span> <br> 
