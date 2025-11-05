@@ -40,7 +40,7 @@ My running theory is that the host country's pavilion says a lot about the attit
       <!-- Add more images as needed -->
     </div>
   </div>
-  <small class="gallery-subtitle">  Perspectives of th 2020 UAE Pavilion. </small>
+  <small class="gallery-subtitle">  Perspectives of the 2020 UAE Pavilion. </small>
   <button class="gallery-arrow right" aria-label="Next">&#xf054;</button>
   <div class="gallery-dots"></div>
 </div>
@@ -94,7 +94,7 @@ The current Expo is also an opportunity for the next host's country to make a st
       <!-- Add more images as needed -->
     </div>
   </div>
-  <small class="gallery-subtitle">  Perspectives of the Saudi Arabia Pavilion. </small>
+  <small class="gallery-subtitle">  Perspectives of the 2025 Saudi Arabia Pavilion. </small>
   <button class="gallery-arrow right" aria-label="Next">&#xf054;</button>
   <div class="gallery-dots"></div>
 </div>
