@@ -12,7 +12,7 @@ thumbnail: /assets/images/projects/port-admin-building/admin-building-thumbnail.
 featured_image: /assets/images/projects/port-admin-building/admin-building-thumbnail.png
 description: A landmark sustainable office building in Abu Dhabi. Shortlisted as an outstanding thesis at Anthology 2024, hosted by WTA Architecture + Design Studio.
 selected: true
-order: 2
+order: 3
 ---
 
 For the New York University Abu Dhabi 2024 Civil Engineering capstone project, we were tasked to design a sustainable seaport that serves as a key trade hub for Abu Dhabi. The admin building would serve as a landmark feature, providing office spaces for the logistics of the port.

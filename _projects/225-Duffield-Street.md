@@ -12,7 +12,7 @@ thumbnail: /assets/images/projects/225-duffield-street/225-duffield-st-thumbnail
 featured_image: /assets/images/projects/225-duffield-street/225-duffield-st-thumbnail.png
 description: 
 selected: true
-order: 3
+order: 4
 ---
 
 For the final project of the graduate course, Analysis and Design of Tall Buildings, we were tasked to propose an office building to be located in Downtown Brooklyn. The concept is a supertall skyscraper which has been designed in accordance with strength and servicability. Deliverables were presented to a panel of architects and engineers at SOM. All diagrams and renders are own work and were created outside of class.

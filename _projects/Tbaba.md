@@ -11,7 +11,7 @@ thumbnail: /assets/images/projects/tbaba/tbaba-thumbnail.jpeg
 featured_image: /assets/images/projects/tbaba/tbaba-hero.png
 description: Tbaba is an innovative installation that pays tribute to the Gulf’s pearl diving heritage. It was exhibited at Dubai Design Week 2024.
 selected: true
-order: 1
+order: 2
 ---
 
 Tbaba (تبابة) is a pavilion showcased at Dubai Design Week 2024 in Dubai Design District (d3). This innovative installation merges Filipino and Emirati maritime heritage through a <a class="internal-link" href=" {% link _projects/The-Red-Spot.md %}"> wind responsive design</a> that transforms traditional pearl diving elements into contemporary architectural expression and creating an engaging space that provides shade and sparks cultural dialogue. Tbaba challenges conventional notions of design in the UAE through the power of intercultural collaboration and the potential of simple, sustainable materials to create high-impact, meaningful spaces.

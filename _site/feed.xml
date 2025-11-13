@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-05T09:36:29+04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gerald Jason Cruz</title><subtitle>Gerald Jason Cruz is an award-winning architectural designer and civil engineer based between Abu Dhabi and Manila.</subtitle><author><name>Gerald Jason Cruz</name></author><entry><title type="html">Reflections from Expo 2020 to Expo 2025</title><link href="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/" rel="alternate" type="text/html" title="Reflections from Expo 2020 to Expo 2025" /><published>2025-11-04T00:00:00+04:00</published><updated>2025-11-04T00:00:00+04:00</updated><id>http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025</id><content type="html" xml:base="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/"><![CDATA[<p>Every five years a Universal Exposition, otherwise known as a World Expo, takes place. While it is an opportunity to showcase the latest in technology and intercultural exchange, it is also a playground for architects to design pavilions and structures at a global stage. I had the chance to visit both Expo 2020 in Dubai, UAE, and Expo 2025 in Osaka, Japan, which recently concluded last month. While there’s certainly a lot to talk about for both, what I find particularly interesting is the differences between the two. How far have we come in the past five years? What can we expect from institutions, and how are their values reflected in the infrastructure surrounding this spectacle? These comparisons, I argue, reveal the world’s current zeitgeist in terms of both technology and architectural design.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-13T09:48:43+04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gerald Jason Cruz</title><subtitle>Gerald Jason Cruz is an award-winning architectural designer and civil engineer based between Abu Dhabi and Manila.</subtitle><author><name>Gerald Jason Cruz</name></author><entry><title type="html">Reflections from Expo 2020 to Expo 2025</title><link href="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/" rel="alternate" type="text/html" title="Reflections from Expo 2020 to Expo 2025" /><published>2025-11-04T00:00:00+04:00</published><updated>2025-11-04T00:00:00+04:00</updated><id>http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025</id><content type="html" xml:base="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/"><![CDATA[<p>Every five years a Universal Exposition, otherwise known as a World Expo, takes place. While it is an opportunity to showcase the latest in technology and intercultural exchange, it is also a playground for architects to design pavilions and structures at a global stage. I had the chance to visit both Expo 2020 in Dubai, UAE, and Expo 2025 in Osaka, Japan, which recently concluded last month. While there’s certainly a lot to talk about for both, what I find particularly interesting is the differences between the two. How far have we come in the past five years? What can we expect from institutions, and how are their values reflected in the infrastructure surrounding this spectacle? These comparisons, I argue, reveal the world’s current zeitgeist in terms of both technology and architectural design.</p>
 
 <p><br /><br /></p>
 
@@ -30,7 +30,7 @@
       <!-- Add more images as needed -->
     </div>
   </div>
-  <small class="gallery-subtitle">  Perspectives of th 2020 UAE Pavilion. </small>
+  <small class="gallery-subtitle">  Perspectives of the 2020 UAE Pavilion. </small>
   <button class="gallery-arrow right" aria-label="Next">&#xf054;</button>
   <div class="gallery-dots"></div>
 </div>
@@ -83,7 +83,7 @@
       <!-- Add more images as needed -->
     </div>
   </div>
-  <small class="gallery-subtitle">  Perspectives of the Saudi Arabia Pavilion. </small>
+  <small class="gallery-subtitle">  Perspectives of the 2025 Saudi Arabia Pavilion. </small>
   <button class="gallery-arrow right" aria-label="Next">&#xf054;</button>
   <div class="gallery-dots"></div>
 </div>
@@ -95,9 +95,9 @@
 <h3 id="whats-next-the-expo-legacy">What’s Next?: The Expo Legacy</h3>
 <p>Having visited both sites over the past four years (due to the pandemic), it’s clear to me that the sentiment has steadily shifted over time. The architecture of the pavilions (both temporary and permanent structures) don’t just serve the purpose of bedazzling visitors, but they also say a lot about each city’s approaches to architecture in an ever changing world.</p>
 
-<p>After Expo 2020 concluded in April 2022 (again due to COVID), the path that Dubai took was an accelerated adaptive reuse: the site, with its Red Line Metro connection, Exposition Center, and proximity to the allegedly expanding Maktoum International Airport, would be turned into Expo City– a mini smart city that would house offices, residential buildings, hospitals, and more. Many of the most prominent structures such as the Al Wasl Dome, UAE Pavilion, and more remained. The Rove Hotel buildings surrounding the dome continued operations, while other larger pavilions would be converted into offices.  It would be “a hub for innovation” hosting events sucgh as the COP 28 Climate Summit in 2023.</p>
+<p>After Expo 2020 concluded in April 2022 (again due to COVID), the path that Dubai took was an accelerated adaptive reuse: the site, with its Red Line Metro connection, Exposition Center, and proximity to the allegedly expanding Maktoum International Airport, would be turned into Expo City– a mini smart city that would house offices, residential buildings, hospitals, and more. Many of the most prominent structures such as the Al Wasl Dome, UAE Pavilion, and more remained. The Rove Hotel buildings surrounding the dome continued operations, while other larger pavilions would be converted into offices.  It would be “a hub for innovation” hosting events such as the COP 28 Climate Summit in 2023.</p>
 
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/reflections-from-expo/Expo_2020-Satellite-1 Large.jpeg" alt="2021" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/reflections-from-expo/Expo_2020-Satellite-2 Large.jpeg" alt="2025" class="after-img" />
   <div class="slider-handle">
@@ -112,7 +112,7 @@
 
 <p>While there is no shortage of themed developments in the city (think Dubai Design District or Dubai Internet City), Expo City is at least trying to be something after the event. The message is: let’s build with the future in mind. And while it is a noble goal to stray away from planned obsolescence for an inherently temporary event, it is a response that makes sense for Dubai, a city built on real estate. The new residential developments rising between permanent pavilions and on the plots of the temporary ones before them have made use of the Expo history as a selling point. While I have yet to fully experience Expo City since it reopened to the public, the times I have passed by have painted a picture that at its present state it isn’t as vibrant or active as expected. Yet, the site is striving to leave behind a worthwhile legacy of Expo 2020.</p>
 
-<p>Expo 2025 on the other hand had adopted the philosophy of impermanence after the event. I say had, because it seems to be in the middle of an identity crisis.</p>
+<p>Expo 2025 on the other hand had adopted the philosophy of <a class="internal-link" href=" /Impermanence/"> impermanence</a> after the event. I say had, because it seems to be in the middle of an identity crisis.</p>
 
 <p>When looking at the original intentions of the site, most of it was supposed to be taken down. The goal, according to the Japan Association for the World Exposition, is to dismantle the majority of the pavilions so that their parts can be reused or repurposed. While this approach is  in line with sustainability in mind (designing temporary buildings to be taken down easily), it also stems from Japan’s strict building codes which state that entire structures cannot be relocated. Auctions are being held for pavilion materials furnishings, which would honestly be pretty cool to be able to own a piece of or do something interesting with materials from Expo 2025. It is, of course, not the first time that Osaka has done this before. After hosting the 1970 World Expo, the site was turned into a park, and the majority of pavilions were dismantled apart from a few buildings and a section of Kenzo Tange’s Festival Plaza Roof.</p>
 
@@ -134,7 +134,7 @@
 
 <p>It is both a great shame yet a powerful reminder to see the majority of the Expo site vanish. There is value in appreciating something so fleeting, even if the notion of impermanent architecture seems antithetical. Architecture can be both inspiring while it’s there, and its absence a noble goal to strive towards. Things do not have to be permanent. In fact, we can and should design things temporarily. When things have finished serving their purpose, they should be celebrated and remembered, but not preserved for the sake of preserving them. Because of this, I feel torn about the fate of the Grand Ring. Even with some of its sections planned to be preserved, it will not be the same Grand Ring after the Expo. The context that made it so grand was the way it surrounded the site and all pavilions within it. It was such an all encompassing structure and a feat of engineering. In a way, you did have to be there to see it. That’s what made it special.</p>
 
-<p>There has been some confusion about the future of the site. After soliciting proposals from a handful of private partners, the following ideas have emerged: a casino, a park, an F1 racetrack, a mall, an arena, to name a few. Similar to Dubai’s approach, Osaka is reusing facilities built for the event, such as Yumeshima Station, for the island that was once a landfill. What I find unfortunate is the seemingly 180 degree turn from what it seemingly set out to do. An Expo site’s legacy should be firm, not wishy-washy. I just think that of all the things for the site to be remembered by, an integrated casino resort feels like going out with a whimper. <br /><br /></p>
+<p>There has been some confusion about the future of the site. After soliciting proposals from a handful of private partners, the following ideas have emerged: a casino, a park, an F1 racetrack, a mall, an arena, to name a few. Similar to Dubai’s approach, Osaka is reusing facilities built for the event, such as Yumeshima Station, for the island that was once a landfill. What I find unfortunate is the seemingly 180 degree turn from what it set out to do. An Expo site’s legacy should be firm, not wishy-washy. I just think that of all the things for the site to be remembered by, an integrated casino resort feels like going out with a whimper. <br /><br /></p>
 
 <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 16px 0;" />
 
@@ -159,7 +159,7 @@
 
 <p>Below are a few thoughts from the days that I visited Expo 2025 in Osaka that couldn’t make it to the final essay.</p>
 <ul>
-  <li>Sou Fujimoto’s Grand Ring was easily the highlight of this year’s expo. It is omnipresent, yet not overbearing. It provides shelter, views, pathways, and intigue.</li>
+  <li>Sou Fujimoto’s Grand Ring was easily the highlight of this year’s expo. It is omnipresent, yet not overbearing. It provides shelter, views, pathways, and intrigue.</li>
   <li>The Philippines pavilion was a pleasant surprise. It was better than I expected, especially after the Expo 2020 pavilion in Dubai. It was well curated and many people were interacting with the exhibitions inside.</li>
   <li>The UAE’s pavilion was a bit underwhelming (then again I’m comparing it to its host country counterpart). It felt more like “just a building”, but as you entered, you could smell like you were back in the perfume souq.</li>
   <li>This year was the Expo of AI– it was heavily featured as a technology and a lot of exhibits included its use for generating photos and videos. I imagine it is the older Japanese generation’s first exposure to it.</li>
@@ -407,7 +407,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /><br /></p>
 
 <h3 id="form-follows-function-follows-form">Form Follows Function Follows Form</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/form-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/form-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -425,7 +425,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="framed-panoramic-views">Framed Panoramic Views</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/bridge-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/bridge-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -443,7 +443,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="a-forest-of-color">A Forest of Color</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/trees-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/trees-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -461,7 +461,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="a-canyon-of-concrete">A Canyon of Concrete</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/windform-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/windform-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -479,7 +479,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="a-void-for-the-void">A Void for the Void</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/void-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/void-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -497,7 +497,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="let-there-be-light">Let there be Light</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/light-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/light-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -515,7 +515,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="an-ecosystem-of-drawings">An Ecosystem of Drawings</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/drawings-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/drawings-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -533,7 +533,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="suspended-in-space">Suspended in Space</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/biocosmos-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/biocosmos-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -551,7 +551,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="the-shape-of-water">The Shape of Water</h3>
-<div class="slider-container" id="slider-1762320989">
+<div class="slider-container" id="slider-1763012923">
   <img src="/assets/images/writings/teamlab-phenomena/water-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/water-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">

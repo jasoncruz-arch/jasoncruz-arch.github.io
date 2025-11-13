@@ -9,7 +9,7 @@ role: Conceptual Design, Rendering, Fabrication
 thumbnail: /assets/images/projects/the-red-spot/red-spot-thumbnail.jpeg
 featured_image: /assets/images/projects/the-red-spot/red-spot-hero.jpeg
 description: 
-selected: true
+selected: false
 order: 5
 ---
 
