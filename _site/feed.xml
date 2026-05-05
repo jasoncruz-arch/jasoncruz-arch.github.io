@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-13T09:48:43+04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gerald Jason Cruz</title><subtitle>Gerald Jason Cruz is an award-winning architectural designer and civil engineer based between Abu Dhabi and Manila.</subtitle><author><name>Gerald Jason Cruz</name></author><entry><title type="html">Reflections from Expo 2020 to Expo 2025</title><link href="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/" rel="alternate" type="text/html" title="Reflections from Expo 2020 to Expo 2025" /><published>2025-11-04T00:00:00+04:00</published><updated>2025-11-04T00:00:00+04:00</updated><id>http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025</id><content type="html" xml:base="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/"><![CDATA[<p>Every five years a Universal Exposition, otherwise known as a World Expo, takes place. While it is an opportunity to showcase the latest in technology and intercultural exchange, it is also a playground for architects to design pavilions and structures at a global stage. I had the chance to visit both Expo 2020 in Dubai, UAE, and Expo 2025 in Osaka, Japan, which recently concluded last month. While there’s certainly a lot to talk about for both, what I find particularly interesting is the differences between the two. How far have we come in the past five years? What can we expect from institutions, and how are their values reflected in the infrastructure surrounding this spectacle? These comparisons, I argue, reveal the world’s current zeitgeist in terms of both technology and architectural design.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-05T08:46:57+04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gerald Jason Cruz</title><subtitle>Gerald Jason Cruz is an award-winning architectural designer and civil engineer based between Abu Dhabi and Manila.</subtitle><author><name>Gerald Jason Cruz</name></author><entry><title type="html">Reflections from Expo 2020 to Expo 2025</title><link href="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/" rel="alternate" type="text/html" title="Reflections from Expo 2020 to Expo 2025" /><published>2025-11-04T00:00:00+04:00</published><updated>2025-11-04T00:00:00+04:00</updated><id>http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025</id><content type="html" xml:base="http://localhost:4000/Reflections-from-Expo-2020-to-Expo-2025/"><![CDATA[<p>Every five years a Universal Exposition, otherwise known as a World Expo, takes place. While it is an opportunity to showcase the latest in technology and intercultural exchange, it is also a playground for architects to design pavilions and structures at a global stage. I had the chance to visit both Expo 2020 in Dubai, UAE, and Expo 2025 in Osaka, Japan, which recently concluded last month. While there’s certainly a lot to talk about for both, what I find particularly interesting is the differences between the two. How far have we come in the past five years? What can we expect from institutions, and how are their values reflected in the infrastructure surrounding this spectacle? These comparisons, I argue, reveal the world’s current zeitgeist in terms of both technology and architectural design.</p>
 
 <p><br /><br /></p>
 
@@ -97,7 +97,7 @@
 
 <p>After Expo 2020 concluded in April 2022 (again due to COVID), the path that Dubai took was an accelerated adaptive reuse: the site, with its Red Line Metro connection, Exposition Center, and proximity to the allegedly expanding Maktoum International Airport, would be turned into Expo City– a mini smart city that would house offices, residential buildings, hospitals, and more. Many of the most prominent structures such as the Al Wasl Dome, UAE Pavilion, and more remained. The Rove Hotel buildings surrounding the dome continued operations, while other larger pavilions would be converted into offices.  It would be “a hub for innovation” hosting events such as the COP 28 Climate Summit in 2023.</p>
 
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/reflections-from-expo/Expo_2020-Satellite-1 Large.jpeg" alt="2021" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/reflections-from-expo/Expo_2020-Satellite-2 Large.jpeg" alt="2025" class="after-img" />
   <div class="slider-handle">
@@ -407,7 +407,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /><br /></p>
 
 <h3 id="form-follows-function-follows-form">Form Follows Function Follows Form</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/form-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/form-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -425,7 +425,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="framed-panoramic-views">Framed Panoramic Views</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/bridge-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/bridge-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -443,7 +443,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="a-forest-of-color">A Forest of Color</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/trees-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/trees-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -461,7 +461,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="a-canyon-of-concrete">A Canyon of Concrete</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/windform-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/windform-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -479,7 +479,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="a-void-for-the-void">A Void for the Void</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/void-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/void-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -497,7 +497,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="let-there-be-light">Let there be Light</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/light-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/light-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -515,7 +515,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="an-ecosystem-of-drawings">An Ecosystem of Drawings</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/drawings-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/drawings-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -533,7 +533,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="suspended-in-space">Suspended in Space</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/biocosmos-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/biocosmos-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">
@@ -551,7 +551,7 @@ document.querySelectorAll('.cargo-gallery').forEach(gallery => {
 <p><br /></p>
 
 <h3 id="the-shape-of-water">The Shape of Water</h3>
-<div class="slider-container" id="slider-1763012923">
+<div class="slider-container" id="slider-1777956417">
   <img src="/assets/images/writings/teamlab-phenomena/water-before.jpg" alt="Before" class="before-img" id="beforeImg" />
   <img src="/assets/images/writings/teamlab-phenomena/water-after.jpg" alt="After" class="after-img" />
   <div class="slider-handle">

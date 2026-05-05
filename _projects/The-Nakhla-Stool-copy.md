@@ -1,7 +1,7 @@
 ---
 layout: project
-title: The Nakhla Stool Series
-subtitle: A furniture piece that fully embodies the date palm tree. Designed and made in the UAE.
+title: The Nakhla Stool
+subtitle: Selected for the House of Artisans Design Competition
 type: [Furniture]
 location: United Arab Emirates
 date: 2025-08-15
@@ -10,16 +10,9 @@ role: Conceptual Design, Rendering, Structural Engineering, Fabrication
 thumbnail: /assets/images/projects/nakhla-stool/Nakhla_Stool-5.jpg
 featured_image: /assets/images/projects/nakhla-stool/Nakhla_Stool-28.jpg
 description: Tha Nakhla Stool is a social furniture piece that embodies the Date Palm Tree in form and function.
-selected: true
-order: 1
+selected: false
+published: false
 ---
-
-<br>
-
-### The Nakhla Stool, Second Edition is now available for pre-orders. For inquiries, email <a href="mailto:gerald@jasoncruz.co" class="internal-link">gerald@jasoncruz.co</a>.
-
-
-<br>
 
 The Nakhla Stool, commissioned by Mubadala and the Abu Dhabi Department of Culture and Tourism, is a set of furniture pieces designed to fully embody the Date Palm Tree. Its form is inspired by the palm trunk's texture and geometric motifs in Arabic architecture, while its materiality is derived from the date palm itself: Khoos, handcrafted by an artisan, and DesertBoard, a locally produced engineered wood made out of waste palm fronds. The stools are as versatile as the Date Palm in functionality, activating social spaces as individual seats (1 stool), standing tables for events (2 stools), and serving as a sculptural piece (3 stools). The piece was first exhibited at Qasr Al Hosn and will then be showcased at NOMAD Abu Dhabi.
 
