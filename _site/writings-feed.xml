@@ -9,9 +9,39 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2026 22:00:33 +0400</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 13:33:09 +0400</lastBuildDate>
 
     
+    
+    <item>
+      <title>In Search of Mawaa</title>
+      <link>http://localhost:4000/In-Search-of-Mawaa/</link>
+      <guid isPermaLink="true">http://localhost:4000/In-Search-of-Mawaa/</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0400</pubDate>
+      <author>Gerald Jason Cruz</author>
+
+      <content:encoded><![CDATA[
+        
+          <p>
+            <img src="http://localhost:4000/assets/images/writings/in-search-of-mawaa/uae-ph-pin.jpeg" alt="Thumbnail for In Search of Mawaa" />
+          </p>
+          
+            <p><em>The pin given to me by H.E. Alfonso Ver, the Philippine Ambassador to the UAE.</em></p>
+          
+        
+
+        
+
+        
+        
+
+        
+          <p><em>The following essay was adapted from a presentation that I had pitched for Anthology Asean 2026. Though I wasn’t able to present it in person, I still felt that it was worth sharing.</em></p>
+
+        <p><em><a href="http://localhost:4000/In-Search-of-Mawaa/">Continue reading <span class="arrow">&rarr;</span></a></em></p>
+
+      ]]></content:encoded>
+    </item>
     
     <item>
       <title>Reflections from Expo 2020 to Expo 2025</title>
