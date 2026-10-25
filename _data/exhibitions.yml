@@ -1,0 +1,40 @@
+# Exhibitions shown on the Nakhla page, newest first.
+#
+# To add photos: upload them to /assets/images/exhibitions/<folder>/
+# (about 2000px wide, under 500KB each), then list them under "photos".
+# The gallery appears automatically once at least one photo is listed.
+#
+# Example:
+#   photos:
+#     - src: /assets/images/exhibitions/goldenpin/taipei-101.jpg
+#       alt: The Nakhla Stool with Taipei 101 in the background
+
+- title: Golden Pin Design Award Mark
+  year: 2026
+  note: Shortlisted · Taipei
+  link:
+  photos: []
+
+- title: Make It In The Emirates 2026
+  year: 2026
+  note: Abu Dhabi
+  link:
+  photos: []
+
+- title: Abu Dhabi Sustainability Week 2026
+  year: 2026
+  note: Abu Dhabi
+  link:
+  photos: []
+
+- title: NOMAD Abu Dhabi 2025
+  year: 2025
+  note: Abu Dhabi
+  link: https://www.nomad-circle.com/destinations/destination_nomad_abu_dhabi
+  photos: []
+
+- title: House of Artisans Design Competition
+  year: 2025
+  note: Qasr Al Hosn, Abu Dhabi
+  link: https://www.instagram.com/p/DOu12PpDa26/?img_index=6
+  photos: []

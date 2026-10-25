@@ -1,0 +1,103 @@
+(function () {
+  var root = document.querySelector('.nk');
+  if (!root) return;
+
+  // Quantity, total and Stripe link
+  var price = parseFloat(root.dataset.price) || 0;
+  var maxQty = parseInt(root.dataset.maxQty, 10) || 4;
+  var links = [];
+  try { links = JSON.parse(root.dataset.links || '[]') || []; } catch (e) {}
+  var configs = ['A single sitting stool', 'Stack two for a standing table', 'Stack three as a sculptural piece', 'Two standing tables'];
+  var qty = 1;
+  var all = function (sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+  var fmt = function (n) { return 'AED ' + n.toLocaleString('en-US'); };
+
+  function renderQty(hitMax) {
+    all('[data-qty-val]').forEach(function (el) { el.textContent = qty; });
+    all('[data-config]').forEach(function (el) {
+      el.textContent = hitMax ? 'For ' + (maxQty + 1) + ' or more, use the quote form below.' : (configs[qty - 1] || qty + ' stools');
+    });
+    all('[data-dec]').forEach(function (b) { b.disabled = qty <= 1; });
+    all('[data-total]').forEach(function (el) { el.textContent = fmt(price * qty); });
+    all('[data-buy]').forEach(function (a) { if (links[qty - 1]) a.href = links[qty - 1]; });
+  }
+  all('[data-dec]').forEach(function (b) { b.addEventListener('click', function () { qty = Math.max(1, qty - 1); renderQty(false); }); });
+  all('[data-inc]').forEach(function (b) { b.addEventListener('click', function () { var hit = qty >= maxQty; qty = Math.min(maxQty, qty + 1); renderQty(hit); }); });
+  renderQty(false);
+
+  // Product gallery
+  var main = root.querySelector('[data-main]');
+  all('[data-thumb]').forEach(function (t) {
+    t.addEventListener('click', function () {
+      main.src = t.dataset.thumb; main.alt = t.dataset.alt || '';
+      all('[data-thumb]').forEach(function (x) { x.classList.toggle('is-active', x === t); });
+    });
+  });
+
+  // Buy bar appears once the buy panel scrolls out of view
+  var panel = document.getElementById('nk-panel');
+  var bar = root.querySelector('[data-bar]');
+  if (panel && bar) {
+    var barOn = null, ticking = false;
+    function checkBar() {
+      ticking = false;
+      var on = panel.getBoundingClientRect().bottom < 60;
+      if (on === barOn) return;
+      barOn = on;
+      bar.classList.toggle('is-on', on);
+      bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+      document.body.classList.toggle('nk-bar-on', on);
+    }
+    function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(checkBar); } }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    checkBar();
+  }
+
+  // Exhibition gallery: one rotation across every exhibition's photos
+  var gal = root.querySelector('[data-exh-gallery]');
+  if (gal) {
+    var imgs = all('[data-exh-img]'), thumbs = all('[data-exh-thumb]'), rows = all('[data-exh-row]');
+    var caption = root.querySelector('[data-exh-caption]');
+    var cur = 0, timer = null, paused = false;
+    function show(i) {
+      cur = (i + imgs.length) % imgs.length;
+      var ex = imgs[cur].dataset.exh;
+      imgs.forEach(function (im, k) { im.classList.toggle('is-active', k === cur); });
+      thumbs.forEach(function (t, k) { t.classList.toggle('is-active', k === cur); });
+      rows.forEach(function (r) { r.classList.toggle('is-active', r.dataset.exhRow === ex); });
+      var same = imgs.filter(function (im) { return im.dataset.exh === ex; });
+      caption.textContent = imgs[cur].dataset.caption + ' · ' + (same.indexOf(imgs[cur]) + 1) + ' / ' + same.length;
+      var t = thumbs[cur], strip = t.parentNode;
+      strip.scrollTo({ left: t.offsetLeft - strip.offsetLeft - strip.clientWidth / 2 + t.clientWidth / 2, behavior: 'smooth' });
+    }
+    function restart() { clearInterval(timer); timer = setInterval(function () { if (!paused && imgs.length > 1) show(cur + 1); }, 5000); }
+    thumbs.forEach(function (t, k) { t.addEventListener('click', function () { show(k); restart(); }); });
+    gal.querySelector('[data-exh-prev]').addEventListener('click', function () { show(cur - 1); restart(); });
+    gal.querySelector('[data-exh-next]').addEventListener('click', function () { show(cur + 1); restart(); });
+    all('[data-exh-jump]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = imgs.findIndex(function (im) { return im.dataset.exh === b.dataset.exhJump; });
+        if (k >= 0) { show(k); restart(); }
+      });
+    });
+    gal.addEventListener('mouseenter', function () { paused = true; });
+    gal.addEventListener('mouseleave', function () { paused = false; });
+    show(0); restart();
+  }
+
+  // Quote form (Formspree) with inline confirmation
+  var form = root.querySelector('[data-quote-form]');
+  if (form && window.fetch) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('[type=submit]'); btn.disabled = true;
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        .then(function (r) {
+          if (!r.ok) throw new Error();
+          form.hidden = true; root.querySelector('[data-quote-sent]').hidden = false;
+        })
+        .catch(function () { btn.disabled = false; alert('Sorry, the request could not be sent. Please email ' + (document.querySelector('.nk-bulk a[href^="mailto:"]') || {}).textContent + '.'); });
+    });
+  }
+})();
