@@ -59,12 +59,27 @@
 .nk-system > img:first-child { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: #f2f2f2; }
 .nk-system h3 { margin-top: 8px; text-align: center; }
 .nk-wide { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: #f2f2f2; }
-.nk-materials { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
-.nk-materials > p { flex: 1 1 420px; }
-.nk-swatches { flex: 0 1 360px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.nk-swatches figure { margin: 0; display: flex; flex-direction: column; gap: 6px; }
-.nk-swatches img { width: 100%; aspect-ratio: 1; object-fit: cover; }
-.nk-swatches figcaption { font-size: 14px; color: var(--nk-muted); }
+.nk-editions-wrap { overflow-x: auto; }
+.nk-editions { width: 100%; margin: 0; border: 0; border-collapse: collapse; table-layout: fixed; font-size: 16px; line-height: 1.45; color: var(--nk-ink); }
+.nk .nk-editions tr, .nk-editions th, .nk-editions td { background: none; border: 0; }
+.nk-editions th, .nk-editions td { padding: 14px 16px; border-bottom: 1px solid var(--nk-line); text-align: left; vertical-align: top; }
+.nk-editions thead th { font-size: 20px; font-weight: 600; vertical-align: bottom; border-bottom-color: var(--nk-ink); }
+.nk-editions thead td { width: 20%; border-bottom-color: var(--nk-ink); }
+.nk-editions tbody th { font-size: 15px; font-weight: 600; }
+.nk-editions .is-past { color: var(--nk-muted); }
+.nk-editions .is-current { background: #fafafa; }
+.nk-ed-swatches { display: flex; gap: 8px; margin-bottom: 12px; }
+.nk-ed-swatches img { width: 64px; height: 64px; object-fit: cover; }
+.nk-editions .is-past img { opacity: .7; }
+@media (max-width: 600px) {
+  .nk-editions { font-size: 14px; }
+  .nk-editions th, .nk-editions td { padding: 10px 8px; }
+  .nk-editions thead th { font-size: 16px; }
+  .nk-editions thead td { width: 26%; }
+  .nk-editions tbody th { font-size: 13px; }
+  .nk-ed-swatches { gap: 4px; }
+  .nk-ed-swatches img { width: 40px; height: 40px; }
+}
 .nk-photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .nk-photo-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #f2f2f2; }
 

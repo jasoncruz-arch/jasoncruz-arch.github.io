@@ -8,7 +8,7 @@ date: 2025-08-15
 role: Conceptual Design, Rendering, Structural Engineering, Fabrication
 thumbnail: /assets/images/projects/nakhla-stool/Nakhla_Stool-5.jpg
 featured_image: /assets/images/projects/nakhla-stool/Nakhla_Stool-28.jpg
-description: The Nakhla Stool is a limited edition of 20 stools made from date palm materials, Khoos and DesertBoard. Designed and made in the UAE, delivered within the UAE.
+description: The Nakhla Stool is a limited edition of 20 stools made from DesertBoard, an engineered wood made from waste date palm fronds. Designed and made in the UAE, delivered within the UAE.
 selected: true
 order: 1
 
@@ -107,12 +107,34 @@ gallery:
 <div class="nk-block">
   <h2>Fully of the Date Palm.</h2>
   <img class="nk-wide" src="/assets/images/projects/nakhla-stool/Nakhla_Stool-32.jpg" alt="Detail of the Nakhla Stool" loading="lazy">
-  <div class="nk-materials">
-    <p>The Nakhla Stool is simple in its materiality, being made fully out of palm derived materials. Its top is made out of Khoos, a traditional sarood mat woven out of dried palm leaves. This iteration was handcrafted by artisan Mariam Al Dhaheri. The rest of the stool is made out of DesertBoard, An engineered wood board made out of waste palm fronds, locally sourced and produced in the UAE. Through this, the Date Palm receives second life as a social furniture piece.</p>
-    <div class="nk-swatches">
-      <figure><img src="/assets/images/projects/nakhla-stool/khoos.png" alt="Khoos, woven palm leaf mat" loading="lazy"><figcaption>Khoos</figcaption></figure>
-      <figure><img src="/assets/images/projects/nakhla-stool/desertboard.png" alt="DesertBoard, engineered palm frond board" loading="lazy"><figcaption>DesertBoard</figcaption></figure>
-    </div>
+  <p>The Nakhla Stool is simple in its materiality, being made fully out of palm derived materials. Its body is made out of DesertBoard, an engineered wood board made out of waste palm fronds, locally sourced and produced in the UAE. Through this, the Date Palm receives second life as a social furniture piece.</p>
+  <div class="nk-editions-wrap">
+    <table class="nk-editions">
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col" class="is-past">
+            <span class="nk-ed-swatches">
+              <img src="/assets/images/projects/nakhla-stool/khoos.png" alt="Khoos, woven palm leaf mat" loading="lazy">
+              <img src="/assets/images/projects/nakhla-stool/desertboard.png" alt="DesertBoard, engineered palm frond board" loading="lazy">
+            </span>
+            First Edition
+          </th>
+          <th scope="col" class="is-current">
+            <span class="nk-ed-swatches">
+              <img src="/assets/images/projects/nakhla-stool/desertboard.png" alt="DesertBoard, engineered palm frond board" loading="lazy">
+            </span>
+            Second Edition
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Materials</th><td class="is-past">Khoos + DesertBoard</td><td class="is-current">DesertBoard</td></tr>
+        <tr><th scope="row">Top</th><td class="is-past">Khoos, a traditional sarood mat woven out of dried palm leaves, handcrafted by artisan Mariam Al Dhaheri</td><td class="is-current">DesertBoard</td></tr>
+        <tr><th scope="row">Pieces made</th><td class="is-past">3, made in 2025</td><td class="is-current">Limited to 20</td></tr>
+        <tr><th scope="row">Availability</th><td class="is-past">No longer available</td><td class="is-current">{% if page.status == "available" %}<a href="#buy">Available to buy →</a>{% elsif page.status == "reserve" %}<a href="#buy">Available to reserve →</a>{% else %}Coming soon{% endif %}</td></tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
