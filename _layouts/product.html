@@ -73,7 +73,7 @@ layout: default
         {% endif %}{% endfor %}
       </dl>
 
-      <a class="nk-bulk-link" href="#bulk">Ordering {{ page.bulk_min | default: 5 }} or more for a space or institution? Request a quote →</a>
+      <a class="nk-bulk-link" href="#bulk">Reserve a stool, or enquire about bulk orders and rentals →</a>
     </aside>
 
     <div class="nk-gallery">
@@ -135,34 +135,40 @@ layout: default
 
   <section class="nk-bulk" id="bulk">
     <div class="nk-bulk-intro">
-      <h2>Institutional and bulk orders</h2>
-      <p>For orders of {{ page.bulk_min | default: 5 }} stools or more, for majlis, lobbies, cultural institutions or events, send a request with your project details. We will reply with pricing and delivery timing.</p>
+      <h2>Reserve or enquire</h2>
+      <p>Reserve a numbered stool from the edition, or ask about institutional and bulk orders ({{ page.bulk_min | default: 5 }} stools or more), rentals for events, or anything else.</p>
       <p class="nk-muted">Or email <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
     </div>
     <div class="nk-bulk-card">
       {% if page.quote_form and page.quote_form != "" %}
       <form class="nk-form" data-quote-form action="{{ page.quote_form }}" method="POST">
-        <input type="hidden" name="_subject" value="Bulk order request: {{ page.title }}">
+        <input type="hidden" name="_subject" value="Reservation / enquiry: {{ page.title }}">
+        <div class="nk-hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
         <div class="nk-fields">
-          <label>Name<input required name="name"></label>
-          <label>Organisation<input name="organisation"></label>
-          <label>Email<input required type="email" name="email"></label>
-          <label>Phone<input type="tel" name="phone"></label>
-          <label>Quantity<select name="quantity"><option>5–9 stools</option><option>10–14 stools</option><option>15–20 stools</option></select></label>
-          <label>Delivery emirate<select name="emirate"><option>Abu Dhabi</option><option>Dubai</option><option>Sharjah</option><option>Ajman</option><option>Umm Al Quwain</option><option>Ras Al Khaimah</option><option>Fujairah</option></select></label>
+          <label>Name<input required name="name" autocomplete="name"></label>
+          <label>Email<input required type="email" name="email" autocomplete="email"></label>
+          <label><span>Phone <span class="nk-opt">(optional)</span></span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label>I’m interested in<select required name="interest">
+            <option value="" selected disabled>Choose one</option>
+            <option>Reserving a stool</option>
+            <option>Institutional or bulk order</option>
+            <option>Rental</option>
+            <option>Other</option>
+          </select></label>
+          <label><span>Quantity <span class="nk-opt">(optional)</span></span><input type="number" name="quantity" min="1" step="1" inputmode="numeric"></label>
         </div>
-        <label>Project details<textarea name="message" rows="4" placeholder="Space, timeline, delivery date"></textarea></label>
-        <button type="submit" class="nk-btn nk-btn-dark">Request a quote</button>
+        <label><span>Message <span class="nk-opt">(optional)</span></span><textarea name="message" rows="4"></textarea></label>
+        <button type="submit" class="nk-btn nk-btn-dark">Send</button>
+        <p class="nk-form-error" data-quote-error role="alert" hidden>Sorry, your message could not be sent. Please email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
       </form>
       <div class="nk-sent" data-quote-sent hidden>
-        <h3>Request sent</h3>
-        <p>Thank you. You will hear back by email.</p>
+        <p>Thank you. I’ll confirm your number and next steps within 24 hours.</p>
       </div>
       {% else %}
       <div class="nk-sent">
-        <h3>Request a quote</h3>
-        <p>Email your project details, quantity and delivery emirate.</p>
-        <a class="nk-btn nk-btn-dark" href="mailto:{{ site.email }}?subject=Bulk%20order%20request%3A%20{{ page.title | uri_escape }}">Email {{ site.email }}</a>
+        <h3>Reserve or enquire</h3>
+        <p>Email your name, what you’re interested in and the quantity.</p>
+        <a class="nk-btn nk-btn-dark" href="mailto:{{ site.email }}?subject=Reservation%20%2F%20enquiry%3A%20{{ page.title | uri_escape }}">Email {{ site.email }}</a>
       </div>
       {% endif %}
     </div>

@@ -15,7 +15,7 @@
   function renderQty(hitMax) {
     all('[data-qty-val]').forEach(function (el) { el.textContent = qty; });
     all('[data-config]').forEach(function (el) {
-      el.textContent = hitMax ? 'For ' + (maxQty + 1) + ' or more, use the quote form below.' : (configs[qty - 1] || qty + ' stools');
+      el.textContent = hitMax ? 'For ' + (maxQty + 1) + ' or more, use the enquiry form below.' : (configs[qty - 1] || qty + ' stools');
     });
     all('[data-dec]').forEach(function (b) { b.disabled = qty <= 1; });
     all('[data-total]').forEach(function (el) { el.textContent = fmt(price * qty); });
@@ -92,12 +92,13 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('[type=submit]'); btn.disabled = true;
+      var err = form.querySelector('[data-quote-error]'); err.hidden = true;
       fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
         .then(function (r) {
           if (!r.ok) throw new Error();
           form.hidden = true; root.querySelector('[data-quote-sent]').hidden = false;
         })
-        .catch(function () { btn.disabled = false; alert('Sorry, the request could not be sent. Please email ' + (document.querySelector('.nk-bulk a[href^="mailto:"]') || {}).textContent + '.'); });
+        .catch(function () { btn.disabled = false; err.hidden = false; });
     });
   }
 })();

@@ -28,9 +28,9 @@ stripe_links:
   - https://buy.stripe.com/REPLACE_3
   - https://buy.stripe.com/REPLACE_4
 
-# Formspree endpoint for the bulk quote form, e.g. https://formspree.io/f/abcdwxyz
+# Formspree endpoint for the reservation and enquiry form, e.g. https://formspree.io/f/abcdwxyz
 # Leave blank to show an email button instead of the form.
-quote_form:
+quote_form: https://formspree.io/f/mnpplzgz
 
 specs:
   - label: Materials
