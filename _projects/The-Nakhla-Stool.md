@@ -34,7 +34,7 @@ quote_form: https://formspree.io/f/mnpplzgz
 
 specs:
   - label: Materials
-    value: Khoos top, handwoven from palm leaves. DesertBoard body, made from waste palm fronds.
+    value: DesertBoard body, made from waste palm fronds.
   - label: Edition
     value: Second Edition, 20 pieces
   - label: Dimensions
