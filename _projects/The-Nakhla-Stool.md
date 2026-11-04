@@ -45,18 +45,19 @@ specs:
 
 # Product photos at the top of the page. The first one is the main image.
 gallery:
-  - src: /assets/images/projects/nakhla-stool/Nakhla_Stool-04.jpg
-    alt: Three Nakhla Stools on a stone plaza
-  - src: /assets/images/projects/nakhla-stool/Nakhla_Stool-07.jpg
+  - src: /assets/images/projects/nakhla-stool/Nakhla-Farm-18.jpg
+    alt: Three Nakhla Stools at a Date Palm Farm
+  - src: /assets/images/projects/nakhla-stool/Nakhla-Farm-5.jpg
     alt: Three stools stacked as a sculptural piece
+  - src: /assets/images/projects/nakhla-stool/Nakhla-Farm-26.jpg
+    alt: Three Nakhla Stools at a Date Palm Farm
   - src: /assets/images/projects/nakhla-stool/Nakhla_Stool-01.jpg
     alt: People seated on Nakhla Stools under date palms
   - src: /assets/images/projects/nakhla-stool/Nakhla_Stool-02.jpg
     alt: Two stools stacked as a standing table
   - src: /assets/images/projects/nakhla-stool/Nakhla_Stool-03.jpg
     alt: Three stools stacked as a sculptural piece
-  - src: /assets/images/projects/nakhla-stool/Nakhla_Stool-06.jpeg
-    alt: The Nakhla Stool exhibited in Taipei
+
 ---
 
 <p class="nk-lead">The Nakhla Stool, commissioned by Mubadala and the Abu Dhabi Department of Culture and Tourism, is a set of furniture pieces designed to fully embody the Date Palm Tree. Its form is inspired by the palm trunk's texture and geometric motifs in Arabic architecture, while its materiality is derived from the date palm itself: Khoos, handcrafted by an artisan, and DesertBoard, a locally produced engineered wood made out of waste palm fronds. The stools are as versatile as the Date Palm in functionality, activating social spaces as individual seats (1 stool), standing tables for events (2 stools), and serving as a sculptural piece (3 stools).</p>
