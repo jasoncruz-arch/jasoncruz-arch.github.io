@@ -12,18 +12,38 @@
   var all = function (sel) { return Array.prototype.slice.call(root.querySelectorAll(sel)); };
   var fmt = function (n) { return 'AED ' + n.toLocaleString('en-US'); };
 
-  function renderQty(hitMax) {
+  function renderQty() {
     all('[data-qty-val]').forEach(function (el) { el.textContent = qty; });
-    all('[data-config]').forEach(function (el) {
-      el.textContent = hitMax ? 'For ' + (maxQty + 1) + ' or more, use the enquiry form below.' : (configs[qty - 1] || qty + ' stools');
-    });
+    all('[data-config]').forEach(function (el) { el.textContent = configs[qty - 1] || qty + ' stools'; });
     all('[data-dec]').forEach(function (b) { b.disabled = qty <= 1; });
+    all('[data-inc]').forEach(function (b) { b.disabled = qty >= maxQty; });
     all('[data-total]').forEach(function (el) { el.textContent = fmt(price * qty); });
     all('[data-buy]').forEach(function (a) { if (links[qty - 1]) a.href = links[qty - 1]; });
+    all('[data-qty-input]').forEach(function (i) { if (document.activeElement !== i) i.value = qty; });
   }
-  all('[data-dec]').forEach(function (b) { b.addEventListener('click', function () { qty = Math.max(1, qty - 1); renderQty(false); }); });
-  all('[data-inc]').forEach(function (b) { b.addEventListener('click', function () { var hit = qty >= maxQty; qty = Math.min(maxQty, qty + 1); renderQty(hit); }); });
-  renderQty(false);
+  all('[data-dec]').forEach(function (b) { b.addEventListener('click', function () { qty = Math.max(1, qty - 1); renderQty(); }); });
+  all('[data-inc]').forEach(function (b) { b.addEventListener('click', function () { qty = Math.min(maxQty, qty + 1); renderQty(); }); });
+  // Typing a quantity in the reservation form updates the steppers and total
+  all('[data-qty-input]').forEach(function (i) {
+    i.addEventListener('input', function () {
+      var n = parseInt(i.value, 10);
+      if (n >= 1 && n <= maxQty) { qty = n; renderQty(); }
+    });
+    i.addEventListener('blur', function () { renderQty(); });
+  });
+  renderQty();
+
+  // Reserve button opens the reservation form in the buy panel
+  var reserve = root.querySelector('[data-reserve]');
+  all('[data-reserve-open]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      reserve.hidden = false;
+      all('[data-reserve-open][aria-expanded]').forEach(function (x) { x.setAttribute('aria-expanded', 'true'); });
+      reserve.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var first = reserve.querySelector('input[name=name]');
+      if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, 400);
+    });
+  });
 
   // Product gallery
   var main = root.querySelector('[data-main]');
@@ -86,19 +106,21 @@
     show(0); restart();
   }
 
-  // Quote form (Formspree) with inline confirmation
-  var form = root.querySelector('[data-quote-form]');
-  if (form && window.fetch) {
+  // Reservation and bulk forms (Formspree) with inline confirmation
+  all('[data-fs]').forEach(function (box) {
+    var form = box.querySelector('form');
+    if (!form || !window.fetch) return;
+    var sent = box.querySelector('[data-fs-sent]'), err = box.querySelector('[data-fs-error]');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('[type=submit]'); btn.disabled = true;
-      var err = form.querySelector('[data-quote-error]'); err.hidden = true;
+      err.hidden = true;
       fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
         .then(function (r) {
           if (!r.ok) throw new Error();
-          form.hidden = true; root.querySelector('[data-quote-sent]').hidden = false;
+          form.hidden = true; sent.hidden = false;
         })
         .catch(function () { btn.disabled = false; err.hidden = false; });
     });
-  }
+  });
 })();

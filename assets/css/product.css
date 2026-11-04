@@ -27,7 +27,7 @@
 .nk-qty span { width: 32px; text-align: center; font-weight: 600; }
 .nk-config { color: var(--nk-muted); font-size: 15px; }
 .nk-cta { display: flex; flex-direction: column; gap: 10px; }
-.nk-btn { display: inline-flex; align-items: center; justify-content: center; height: 54px; padding: 0 28px; border: 0; background: var(--nk-red); color: #fff !important; font-size: 17px; font-weight: 600; cursor: pointer; text-decoration: none; }
+.nk-btn { display: inline-flex; align-items: center; justify-content: center; gap: .3em; height: 54px; padding: 0 28px; border: 0; background: var(--nk-red); color: #fff !important; font-size: 17px; font-weight: 600; cursor: pointer; text-decoration: none; }
 .nk-btn:hover { background: var(--nk-red-dark); }
 .nk-btn:disabled, .nk-btn:disabled:hover { background: var(--nk-line); color: #888 !important; cursor: not-allowed; }
 .nk-btn-dark { background: var(--nk-ink); align-self: flex-start; height: 50px; font-size: 16px; }
@@ -111,8 +111,10 @@
 .nk-form textarea { resize: vertical; }
 .nk [hidden] { display: none !important; }
 .nk-opt { font-weight: 400; color: var(--nk-muted); }
-.nk-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .nk-form-error { margin: 0; font-size: 15px; color: var(--nk-red); }
+.nk-reserve { border-top: 1px solid var(--nk-line); padding-top: 20px; scroll-margin-top: 90px; }
+.nk-reserve .nk-fields { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.nk-reserve .nk-sent { min-height: 0; padding: 8px 0; }
 @media (max-width: 600px) {
   .nk-bulk-card { padding: 20px; }
   .nk-form .nk-btn-dark { align-self: stretch; }

@@ -2,13 +2,22 @@
 layout: default
 ---
 {%- assign available = false -%}
-{%- if page.status == "available" -%}{%- assign available = true -%}{%- endif -%}
-{%- assign max_qty = page.bulk_min | default: 5 | minus: 1 -%}
+{%- assign reserve = false -%}
+{%- if page.status == "available" -%}{%- assign available = true -%}
+{%- elsif page.status == "reserve" -%}{%- assign reserve = true -%}{%- endif -%}
+{%- assign has_form = false -%}
+{%- if page.quote_form and page.quote_form != "" -%}{%- assign has_form = true -%}{%- endif -%}
+{%- if reserve -%}
+  {%- assign max_qty = page.edition_size | default: 20 -%}
+{%- else -%}
+  {%- assign max_qty = page.stripe_links.size | default: 4 -%}
+{%- endif -%}
+{%- assign asset_v = site.time | date: '%s' -%}
 {%- assign exh = site.data.exhibitions -%}
 {%- assign exh_photos = 0 -%}
 {%- for e in exh -%}{%- if e.photos -%}{%- assign exh_photos = exh_photos | plus: e.photos.size -%}{%- endif -%}{%- endfor -%}
 
-<link rel="stylesheet" href="{{ '/assets/css/product.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/product.css' | relative_url }}?v={{ asset_v }}">
 
 <script type="application/ld+json">
 {
@@ -24,9 +33,9 @@ layout: default
   "offers": {
     "@type": "Offer",
     "url": "{{ site.url }}{{ page.url }}",
-    {% if available %}"price": "{{ page.price }}",
+    {% if available or reserve %}"price": "{{ page.price }}",
     "priceCurrency": "AED",
-    "availability": "https://schema.org/LimitedAvailability",{% else %}"availability": "https://schema.org/PreOrder",{% endif %}
+    {% endif %}{% if available %}"availability": "https://schema.org/LimitedAvailability",{% else %}"availability": "https://schema.org/PreOrder",{% endif %}
     "eligibleRegion": { "@type": "Country", "name": "AE" }
   }
 }
@@ -42,7 +51,7 @@ layout: default
         {% if page.subtitle %}<p class="nk-sub">{{ page.subtitle }}</p>{% endif %}
       </div>
 
-      {% if available %}
+      {% if available or reserve %}
       <div class="nk-price"><strong>{{ page.price_label }}</strong><span>per stool</span></div>
       {% endif %}
 
@@ -62,10 +71,45 @@ layout: default
         {% if available %}
         <a class="nk-btn" data-buy href="{{ page.stripe_links[0] }}">Buy now · <span data-total>{{ page.price_label }}</span></a>
         <span class="nk-note">Secure checkout with Stripe. Delivered within the UAE.</span>
+        {% elsif reserve and has_form %}
+        <button class="nk-btn" type="button" data-reserve-open aria-expanded="false" aria-controls="nk-reserve">Reserve · <span data-total>{{ page.price_label }}</span></button>
+        <span class="nk-note">Reserve your stool now. I’ll confirm your number, payment and delivery within 24 hours. Delivered within the UAE.</span>
+        {% elsif reserve %}
+        <a class="nk-btn" href="mailto:{{ site.email }}?subject=Purchase%20reservation%3A%20{{ page.title | uri_escape }}">Reserve · <span data-total>{{ page.price_label }}</span></a>
+        <span class="nk-note">Email to reserve. Delivered within the UAE.</span>
         {% else %}
         <button class="nk-btn" type="button" disabled aria-disabled="true">Coming Soon</button>
         {% endif %}
       </div>
+
+      {% if reserve and has_form %}
+      <div class="nk-reserve" id="nk-reserve" data-reserve data-fs hidden>
+        <form class="nk-form" action="{{ page.quote_form }}" method="POST">
+          <input type="hidden" name="_subject" value="Purchase reservation: {{ page.title }}">
+          <input type="hidden" name="unit_price" value="{{ page.price_label }}">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <h3>Reserve your stool</h3>
+          <div class="nk-fields">
+            <label>Name<input required name="name" autocomplete="name"></label>
+            <label>Email<input required type="email" name="email" autocomplete="email"></label>
+            <label><span>Phone <span class="nk-opt">(optional)</span></span><input type="tel" name="phone" autocomplete="tel"></label>
+            <label>Quantity<input required type="number" name="quantity" value="1" min="1" max="{{ max_qty }}" step="1" inputmode="numeric" data-qty-input></label>
+          </div>
+          <label>I’m interested in<select required name="interest">
+            <option value="" disabled>Choose one</option>
+            <option selected>Reserving a stool</option>
+            <option>Institutional or bulk order</option>
+            <option>Other</option>
+          </select></label>
+          <label><span>Message <span class="nk-opt">(optional)</span></span><textarea name="message" rows="3"></textarea></label>
+          <button type="submit" class="nk-btn">Send reservation</button>
+          <p class="nk-form-error" data-fs-error role="alert" hidden>Sorry, your reservation could not be sent. Please email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+        </form>
+        <div class="nk-sent" data-fs-sent hidden>
+          <p>Thank you. I’ll confirm your number and next steps within 24 hours.</p>
+        </div>
+      </div>
+      {% endif %}
 
       <dl class="nk-specs">
         {% for s in page.specs %}{% if s.value and s.value != "" %}
@@ -73,7 +117,7 @@ layout: default
         {% endif %}{% endfor %}
       </dl>
 
-      <a class="nk-bulk-link" href="#bulk">Reserve a stool, or enquire about bulk orders and rentals →</a>
+      <a class="nk-bulk-link" href="#bulk">Ordering {{ page.bulk_min | default: 5 }} or more for a space or institution? Request a quote →</a>
     </aside>
 
     <div class="nk-gallery">
@@ -135,40 +179,36 @@ layout: default
 
   <section class="nk-bulk" id="bulk">
     <div class="nk-bulk-intro">
-      <h2>Reserve or enquire</h2>
-      <p>Reserve a numbered stool from the edition, or ask about institutional and bulk orders ({{ page.bulk_min | default: 5 }} stools or more), rentals for events, or anything else.</p>
+      <h2>Institutional and bulk orders</h2>
+      <p>For orders of {{ page.bulk_min | default: 5 }} stools or more, for majlis, lobbies, cultural institutions or events, send a request with your project details. We will reply with pricing and delivery timing.</p>
       <p class="nk-muted">Or email <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
     </div>
-    <div class="nk-bulk-card">
-      {% if page.quote_form and page.quote_form != "" %}
-      <form class="nk-form" data-quote-form action="{{ page.quote_form }}" method="POST">
-        <input type="hidden" name="_subject" value="Reservation / enquiry: {{ page.title }}">
-        <div class="nk-hp" aria-hidden="true"><label>Leave this empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+    <div class="nk-bulk-card" data-fs>
+      {% if has_form %}
+      <form class="nk-form" action="{{ page.quote_form }}" method="POST">
+        <input type="hidden" name="_subject" value="Bulk order request: {{ page.title }}">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
         <div class="nk-fields">
           <label>Name<input required name="name" autocomplete="name"></label>
+          <label>Organisation<input name="organisation" autocomplete="organization"></label>
           <label>Email<input required type="email" name="email" autocomplete="email"></label>
-          <label><span>Phone <span class="nk-opt">(optional)</span></span><input type="tel" name="phone" autocomplete="tel"></label>
-          <label>I’m interested in<select required name="interest">
-            <option value="" selected disabled>Choose one</option>
-            <option>Reserving a stool</option>
-            <option>Institutional or bulk order</option>
-            <option>Rental</option>
-            <option>Other</option>
-          </select></label>
-          <label><span>Quantity <span class="nk-opt">(optional)</span></span><input type="number" name="quantity" min="1" step="1" inputmode="numeric"></label>
+          <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+          <label>Quantity<select name="quantity"><option>5–9 stools</option><option>10–14 stools</option><option>15–20 stools</option></select></label>
+          <label>Delivery emirate<select name="emirate"><option>Abu Dhabi</option><option>Dubai</option><option>Sharjah</option><option>Ajman</option><option>Umm Al Quwain</option><option>Ras Al Khaimah</option><option>Fujairah</option></select></label>
         </div>
-        <label><span>Message <span class="nk-opt">(optional)</span></span><textarea name="message" rows="4"></textarea></label>
-        <button type="submit" class="nk-btn nk-btn-dark">Send</button>
-        <p class="nk-form-error" data-quote-error role="alert" hidden>Sorry, your message could not be sent. Please email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+        <label>Project details<textarea name="message" rows="4" placeholder="Space, timeline, delivery date"></textarea></label>
+        <button type="submit" class="nk-btn nk-btn-dark">Request a quote</button>
+        <p class="nk-form-error" data-fs-error role="alert" hidden>Sorry, your request could not be sent. Please email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
       </form>
-      <div class="nk-sent" data-quote-sent hidden>
-        <p>Thank you. I’ll confirm your number and next steps within 24 hours.</p>
+      <div class="nk-sent" data-fs-sent hidden>
+        <h3>Request sent</h3>
+        <p>Thank you. You will hear back by email.</p>
       </div>
       {% else %}
       <div class="nk-sent">
-        <h3>Reserve or enquire</h3>
-        <p>Email your name, what you’re interested in and the quantity.</p>
-        <a class="nk-btn nk-btn-dark" href="mailto:{{ site.email }}?subject=Reservation%20%2F%20enquiry%3A%20{{ page.title | uri_escape }}">Email {{ site.email }}</a>
+        <h3>Request a quote</h3>
+        <p>Email your project details, quantity and delivery emirate.</p>
+        <a class="nk-btn nk-btn-dark" href="mailto:{{ site.email }}?subject=Bulk%20order%20request%3A%20{{ page.title | uri_escape }}">Email {{ site.email }}</a>
       </div>
       {% endif %}
     </div>
@@ -179,7 +219,7 @@ layout: default
       <img src="{{ page.gallery[0].src }}" alt="">
       <div class="nk-bar-text">
         <strong>{{ page.title }}</strong>
-        <span>{% if available %}{{ page.price_label }} per stool · {% endif %}<span data-config>A single sitting stool</span></span>
+        <span>{% if available or reserve %}{{ page.price_label }} per stool · {% endif %}<span data-config>A single sitting stool</span></span>
       </div>
       <div class="nk-qty">
         <button type="button" data-dec aria-label="Fewer">−</button>
@@ -188,6 +228,10 @@ layout: default
       </div>
       {% if available %}
       <a class="nk-btn" data-buy href="{{ page.stripe_links[0] }}">Buy now · <span data-total>{{ page.price_label }}</span></a>
+      {% elsif reserve and has_form %}
+      <button class="nk-btn" type="button" data-reserve-open aria-controls="nk-reserve">Reserve · <span data-total>{{ page.price_label }}</span></button>
+      {% elsif reserve %}
+      <a class="nk-btn" href="mailto:{{ site.email }}?subject=Purchase%20reservation%3A%20{{ page.title | uri_escape }}">Reserve · <span data-total>{{ page.price_label }}</span></a>
       {% else %}
       <button class="nk-btn" type="button" disabled aria-disabled="true">Coming Soon</button>
       {% endif %}
@@ -195,4 +239,4 @@ layout: default
   </div>
 </div>
 
-<script src="{{ '/assets/js/product.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/product.js' | relative_url }}?v={{ asset_v }}" defer></script>

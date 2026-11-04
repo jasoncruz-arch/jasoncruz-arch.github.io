@@ -14,8 +14,9 @@ order: 1
 
 # ---- Store settings ----
 # coming_soon: grey "Coming Soon" button, prices hidden
+# reserve:     prices shown, "Reserve" button opens a purchase reservation form (sent to quote_form)
 # available:   "Buy now" button with prices, linked to Stripe
-status: coming_soon
+status: reserve
 price: 3500
 price_label: AED 3,500
 edition_label: Second Edition · Limited to 20 pieces
@@ -28,8 +29,8 @@ stripe_links:
   - https://buy.stripe.com/REPLACE_3
   - https://buy.stripe.com/REPLACE_4
 
-# Formspree endpoint for the reservation and enquiry form, e.g. https://formspree.io/f/abcdwxyz
-# Leave blank to show an email button instead of the form.
+# Formspree endpoint for the purchase reservation form and the bulk order form, e.g. https://formspree.io/f/abcdwxyz
+# Leave blank to show email buttons instead of the forms.
 quote_form: https://formspree.io/f/mnpplzgz
 
 specs:
